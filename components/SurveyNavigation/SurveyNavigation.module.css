@@ -1,0 +1,6 @@
+.SurveyNavigation {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #CCC;
+	padding: 10px 0;
+}

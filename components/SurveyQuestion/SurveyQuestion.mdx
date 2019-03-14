@@ -1,0 +1,69 @@
+---
+name: Survey Question
+---
+
+import { Playground, PropsTable } from 'docz'
+import SurveyQuestion from './SurveyQuestion'
+
+# Survey Question
+
+## Basic usage
+
+<PropsTable of={SurveyQuestion} />
+
+## Text Question
+
+<Playground>
+    <SurveyQuestion
+        index="1"
+        type="text"
+        question='Whats your full name?'
+        answer= ''
+        placeholder= 'Answer here'
+        totalPages="10"
+        enterPressed="false"
+        setCurrentPage="3"
+        inputChanged={() => { console.log('changed') }} />
+</Playground>
+
+## Radio Question
+
+<Playground>
+    <SurveyQuestion
+        index="1"
+        type="radio"
+        options={[
+            'Part-time',
+            'Full-time',
+            'Freelancer',
+            'Contractor'
+        ]}
+        question='What type of position are you looking for?'
+        answer= ''
+        placeholder= 'Answer here'
+        totalPages="10"
+        enterPressed="false"
+        setCurrentPage="3"
+        inputChanged={() => { console.log('changed') }} />
+</Playground>
+
+## Select Question
+
+<Playground>
+    <SurveyQuestion
+        index="1"
+        type="select"
+        options={[
+            'Less than 1 year',
+            '1-2 years',
+            '3-5 years',
+            'More than 5 years'
+        ]}
+        question='Experience'
+        answer= ''
+        placeholder= 'Answer here'
+        totalPages="10"
+        enterPressed="false"
+        setCurrentPage="3"
+        inputChanged={() => { console.log('changed') }} />
+</Playground>

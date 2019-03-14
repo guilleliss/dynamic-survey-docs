@@ -1,0 +1,14 @@
+.ProgressBar {
+	border-radius: 30px;
+	border: 1px solid #CCC;
+	display: flex;
+	justify-content: flex-start;
+	height: 20px;
+    overflow: hidden;
+}
+
+
+.ProgressBar .Inner {
+	background: blue;
+	transition: width 0.3s ease-out;
+}

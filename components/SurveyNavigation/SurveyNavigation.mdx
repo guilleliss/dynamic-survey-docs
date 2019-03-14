@@ -1,0 +1,21 @@
+---
+name: Survey Navigation
+---
+
+import { Playground, PropsTable } from 'docz'
+import SurveyNavigation from './SurveyNavigation'
+
+# Survey Navigation
+
+## Basic usage
+
+<PropsTable of={SurveyNavigation} />
+
+<Playground>
+	<SurveyNavigation
+		backClicked={() => { console.log('back clicked') }}
+		nextClicked={() => { console.log('next clicked') }}
+		totalPages="10"
+		currentPage="3"
+		nextStepEnabled="true" />
+</Playground>

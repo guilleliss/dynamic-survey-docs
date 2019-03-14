@@ -1,0 +1,19 @@
+{
+	"name": "DynamicSurveyDocs",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"docz:dev": "docz dev",
+		"docz:build": "docz build"
+	},
+	"devDependencies": {
+		"docz": "^0.13.7",
+		"docz-plugin-css": "^0.11.0",
+		"docz-theme-default": "^0.13.7"
+	},
+	"peerDependencies": {
+		"prop-types": "^15.7.2",
+		"react": "^16.6.3",
+		"react-dom": "^16.6.3"
+	}
+}
